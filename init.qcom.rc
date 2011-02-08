@@ -34,7 +34,6 @@ on property:init.svc.adbd=running
 on property:init.svc.adbd=stopped
     write /sys/module/g_android/parameters/product_id 9017
 
-
 #on early-init
 #    start hwprops
 
@@ -69,6 +68,12 @@ on boot
 
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth
     write /proc/sys/net/ipv4/tcp_adv_win_scale  1
+
+property:dev.bootcomplete=1
+    # Adjust cpufreq to ondemand according to original post-boot script
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor ondemand
+    write /sys/devices/system/cpu/cpu0/cpufreq/ondemand/up_threshold 90
+    write /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate 25000
 
 on property:init.svc.bluetoothd=running
     write /sys/devices/virtual/bluetooth/hci0/idle_timeout 7000
