@@ -47,7 +47,6 @@ PRODUCT_COPY_FILES += \
 
 ## RIL related stuff
 PRODUCT_COPY_FILES += \
-    device/geeksphone/zero/spn-conf.xml:system/etc/spn-conf.xml \
     vendor/geeksphone/zero/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/geeksphone/zero/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
     vendor/geeksphone/zero/proprietary/lib/libmmgsdilib.so:system/lib/libmmgsdilib.so \
