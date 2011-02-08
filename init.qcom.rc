@@ -5,17 +5,11 @@ on fs
     chown system system /persist
     chmod 0777 /persist
 
-    chmod 666 /dev/mot
-    chmod 666 /dev/mmc31xx
-    chmod 666 /dev/ecompass_ctrl
-    chmod 666 /dev/cm3623_ps
-    chmod 666 /dev/cm3623_als
-    mkdir /data/misc/sensors 0777 system system
+    mkdir /data/misc/sensors 0770 compass system
 
     symlink /persist/qcom_wlan_nv.bin /etc/firmware/wlan/qcom_wlan_nv.bin
 
     #Add popedom for CIT by smartwireless ltd
-    chmod 777 /dev/hcit_misc
     chmod 777 /dev/graphics/fb0
     chmod 777 /system/etc/lcdvcom
     chmod 666 /dev/threadright0
@@ -138,6 +132,7 @@ service dhcpcd /system/bin/dhcpcd -BKL wlan0
     oneshot
 
 service memsicd /system/bin/memsicd
+    user compass
     oneshot
 
 service wifi-loader /system/bin/logwrapper /system/bin/wificit.sh
