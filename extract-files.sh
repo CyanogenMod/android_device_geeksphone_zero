@@ -3,6 +3,7 @@
 mkdir -p ../../../vendor/geeksphone/zero/proprietary
 
 DIRS="
+app
 bin
 etc/firmware
 lib/egl
@@ -95,6 +96,12 @@ lib/libOmxVidEnc.so
 lib/libOmxWmaDec.so
 lib/libOmxWmvDec.so
 
+lib/libfmhal.so
+lib/libFMRadio.so
+lib/libCITFMRadio.so
+lib/libbluedroid.so
+lib/libaudio.so
+app/FMRadio.apk
 "
 
 for FILE in $FILES; do
