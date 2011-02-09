@@ -121,13 +121,10 @@ PRODUCT_COPY_FILES += \
     vendor/geeksphone/zero/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/geeksphone/zero/proprietary/lib/libmmipl.so:system/lib/libmmipl.so
 
-## Atheros AR6002 firmware
+## Wifi module
 PRODUCT_COPY_FILES += \
     device/geeksphone/zero/prebuilt/dhd.ko:system/etc/dhd.ko
 
-    #vendor/geeksphone/zero/proprietary/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
-    vendor/geeksphone/zero/proprietary/bin/brcm_patchram_plus.dat:system/bin/brcm_patchram_plus.dat \ #
-#
 ## Other libraries and proprietary binaries
 PRODUCT_COPY_FILES += \
     vendor/geeksphone/zero/proprietary/bin/bt_tool.dat:system/bin/bt_tool.dat \
