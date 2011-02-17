@@ -10,4 +10,4 @@
 /dev/ecompass_ctrl          0660   compass   system
 /dev/cm3623_ps              0660   compass   system
 /dev/cm3623_als             0660   compass   system
-
+/dev/msm_preproc_ctl        0660   system    audio
