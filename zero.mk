@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
 # Board-specific init
 PRODUCT_COPY_FILES += \
     device/geeksphone/zero/ueventd.qct.rc:root/ueventd.qct.rc \
-    device/geeksphone/zero/init.qcom.rc:root/init.qcom.rc
+    device/geeksphone/zero/init.zero.rc:root/init.zero.rc
 
 ## RIL related stuff
 PRODUCT_COPY_FILES += \
