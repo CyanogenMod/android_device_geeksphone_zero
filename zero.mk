@@ -125,14 +125,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/geeksphone/zero/prebuilt/dhd.ko:system/etc/dhd.ko
 
+## Temporary disable
 ## FMRadio app and dependencies
-PRODUCT_COPY_FILES += \
-    vendor/geeksphone/zero/proprietary/lib/libfmhal.so:system/lib/libfmhal.so \
-    vendor/geeksphone/zero/proprietary/lib/libFMRadio.so:system/lib/libFMRadio.so \
-    vendor/geeksphone/zero/proprietary/lib/libCITFMRadio.so:system/lib/libCITFMRadio.so \
-    vendor/geeksphone/zero/proprietary/lib/libbluedroid.so:system/lib/libbluedroid.so \
-    vendor/geeksphone/zero/proprietary/lib/libaudio.so:system/lib/libaudio.so \
-    vendor/geeksphone/zero/proprietary/app/FMRadio.apk:system/app/FMRadio.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/geeksphone/zero/proprietary/lib/libfmhal.so:system/lib/libfmhal.so \
+#    vendor/geeksphone/zero/proprietary/lib/libFMRadio.so:system/lib/libFMRadio.so \
+#    vendor/geeksphone/zero/proprietary/lib/libCITFMRadio.so:system/lib/libCITFMRadio.so \
+#    vendor/geeksphone/zero/proprietary/lib/libbluedroid.so:system/lib/libbluedroid.so \
+#    vendor/geeksphone/zero/proprietary/lib/libaudio.so:system/lib/libaudio.so \
+#    vendor/geeksphone/zero/proprietary/app/FMRadio.apk:system/app/FMRadio.apk
 
 ## Other libraries and proprietary binaries
 PRODUCT_COPY_FILES += \
