@@ -135,7 +135,6 @@ PRODUCT_COPY_FILES += \
     vendor/geeksphone/zero/proprietary/app/FMRadio.apk:system/app/FMRadio.apk
 
 
-   #device/geeksphone/zero/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
    # device/geeksphone/zero/AudioFilter.csv:system/etc/AudioFilter.csv \
    
 ## Other libraries and proprietary binaries
@@ -153,6 +152,7 @@ PRODUCT_COPY_FILES += \
     device/geeksphone/zero/prebuilt/wificit.sh:system/bin/wificit.sh \
     device/geeksphone/zero/prebuilt/nvram.txt:system/etc/nvram.txt \
     vendor/geeksphone/zero/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+    device/geeksphone/zero/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
     vendor/geeksphone/zero/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
     vendor/geeksphone/zero/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
     vendor/geeksphone/zero/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
