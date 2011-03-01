@@ -125,16 +125,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/geeksphone/zero/prebuilt/dhd.ko:system/etc/dhd.ko
 
-## Temporary disable
 ## FMRadio app and dependencies
-#PRODUCT_COPY_FILES += \
-#    vendor/geeksphone/zero/proprietary/lib/libfmhal.so:system/lib/libfmhal.so \
-#    vendor/geeksphone/zero/proprietary/lib/libFMRadio.so:system/lib/libFMRadio.so \
-#    vendor/geeksphone/zero/proprietary/lib/libCITFMRadio.so:system/lib/libCITFMRadio.so \
-#    vendor/geeksphone/zero/proprietary/lib/libbluedroid.so:system/lib/libbluedroid.so \
-#    vendor/geeksphone/zero/proprietary/lib/libaudio.so:system/lib/libaudio.so \
-#    vendor/geeksphone/zero/proprietary/app/FMRadio.apk:system/app/FMRadio.apk
+PRODUCT_COPY_FILES += \
+    vendor/geeksphone/zero/proprietary/lib/libfmhal.so:system/lib/libfmhal.so \
+    vendor/geeksphone/zero/proprietary/lib/libFMRadio.so:system/lib/libFMRadio.so \
+    vendor/geeksphone/zero/proprietary/lib/libCITFMRadio.so:system/lib/libCITFMRadio.so \
+    vendor/geeksphone/zero/proprietary/lib/libbluedroid.so:system/lib/libbluedroid.so \
+    vendor/geeksphone/zero/proprietary/lib/libaudio.so:system/lib/libaudio.so \
+    vendor/geeksphone/zero/proprietary/app/FMRadio.apk:system/app/FMRadio.apk
 
+
+   #device/geeksphone/zero/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
+   # device/geeksphone/zero/AudioFilter.csv:system/etc/AudioFilter.csv \
+   
 ## Other libraries and proprietary binaries
 PRODUCT_COPY_FILES += \
     vendor/geeksphone/zero/proprietary/bin/bt_tool.dat:system/bin/bt_tool.dat \
@@ -150,8 +153,6 @@ PRODUCT_COPY_FILES += \
     device/geeksphone/zero/prebuilt/wificit.sh:system/bin/wificit.sh \
     device/geeksphone/zero/prebuilt/nvram.txt:system/etc/nvram.txt \
     vendor/geeksphone/zero/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    device/geeksphone/zero/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
-    device/geeksphone/zero/AudioFilter.csv:system/etc/AudioFilter.csv \
     vendor/geeksphone/zero/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
     vendor/geeksphone/zero/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
     vendor/geeksphone/zero/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
