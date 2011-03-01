@@ -64,4 +64,7 @@ BOARD_HAVE_FM_RADIO := true
 BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
 BOARD_USE_BROADCOM_FM_VOLUME_HACK := true
 
+BOARD_USE_USB_MASS_STORAGE_SWITCH := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun
+
 BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/geeksphone/zero/vibrator.c
