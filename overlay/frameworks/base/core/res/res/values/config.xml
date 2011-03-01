@@ -24,22 +24,16 @@
     <!-- Use the new fancy screen off animation -->
     <bool name="config_animateScreenLights">false</bool>
 
+<!--
     <string-array translatable="false" name="config_tether_usb_regexs">
         <item>"usb0"</item>
     </string-array>
 
     <string-array translatable="false" name="config_tether_upstream_regexs">
-<!--
-    	<item>"wlan0"</item> -->
+    	<item>"wlan0"</item> 
     	<item>"rmnet0"</item>
-    </string-array>
-
-<!--
-    <string-array translatable="false" name="config_tether_wifi_regexs">
-        <item>"athap0"</item>
-    </string-array>
+    </string-array> 
     -->
-
 
     <!-- Allow the menu hard key to be disabled in LockScreen on some devices -->
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
