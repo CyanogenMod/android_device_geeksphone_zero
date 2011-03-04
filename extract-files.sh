@@ -43,7 +43,6 @@ lib/hw/lights.msm7k.so
 
 lib/hw/sensors.default.so
 
-lib/libgps.so
 lib/liba2dp.so
 lib/libaudioeq.so
 
@@ -69,9 +68,6 @@ lib/libril.so
 lib/libwms.so
 lib/libwmsts.so
 lib/libloc_api.so
-lib/libloc.so
-lib/libloc-rpc.so
-lib/libcommondefs.so
 
 lib/libcamera.so
 lib/libmmipl.so

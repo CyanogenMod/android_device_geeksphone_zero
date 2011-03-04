@@ -91,14 +91,6 @@ PRODUCT_COPY_FILES += \
     vendor/geeksphone/zero/proprietary/lib/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so \
     vendor/geeksphone/zero/proprietary/lib/libOmxWmvDec.so:system/lib/libOmxWmvDec.so
 
-## GPS stuffs
-PRODUCT_COPY_FILES += \
-    vendor/geeksphone/zero/proprietary/lib/libloc.so:obj/lib/libloc.so \
-    vendor/geeksphone/zero/proprietary/lib/libloc.so:system/lib/libloc.so \
-    vendor/geeksphone/zero/proprietary/lib/libloc-rpc.so:system/lib/libloc-rpc.so  \
-    vendor/geeksphone/zero/proprietary/lib/libloc-rpc.so:obj/lib/libloc-rpc.so  \
-    vendor/geeksphone/zero/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so
-
 ## Hardware properties 
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
