@@ -136,7 +136,6 @@ PRODUCT_COPY_FILES += \
     vendor/geeksphone/zero/proprietary/bin/CKPD-daemon:system/bin/CKPD-daemon \
     vendor/geeksphone/zero/proprietary/bin/memsicd:system/bin/memsicd \
     vendor/geeksphone/zero/proprietary/bin/wl:system/bin/wl \
-    vendor/geeksphone/zero/proprietary/etc/sdio.bin:system/etc/sdio.bin \
     vendor/geeksphone/zero/proprietary/etc/sdio_cit.bin:system/etc/sdio_cit.bin \
     vendor/geeksphone/zero/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     device/geeksphone/zero/prebuilt/init.qcom.bt.sh:system/bin/init.qcom.bt.sh \

@@ -6,7 +6,7 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
 BOARD_WLAN_DEVICE := bcm4325
-WIFI_DRIVER_FW_STA_PATH := "/system/etc/sdio.bin"
+WIFI_DRIVER_FW_STA_PATH := "/system/etc/sdio_cit.bin"
 WIFI_DRIVER_MODULE_NAME     := "dhd"
 WIFI_DRIVER_MODULE_PATH     := "/system/etc/dhd.ko"
 WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/sdio_cit.bin nvram_path=/system/etc/nvram.txt"
