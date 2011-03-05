@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += \
 
 # Board-specific init
 PRODUCT_COPY_FILES += \
-    device/geeksphone/zero/ueventd.qct.rc:root/ueventd.qct.rc \
+    device/geeksphone/zero/ueventd.pw28.rc:root/ueventd.pw28.rc \
     device/geeksphone/zero/320_480logo.rle:root/320_480logo.rle \
     device/geeksphone/zero/320_480logo.rle:root/initlogo.rle \
     device/geeksphone/zero/init.zero.rc:root/init.zero.rc
