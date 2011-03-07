@@ -22,15 +22,6 @@ on fs
    chmod 777 /data/simcom/btadd
    mount yaffs2 mtd@system /system rw remount
 
-on property:init.svc.adbd=running
-    write /sys/module/g_android/parameters/product_id 9018
-
-on property:init.svc.adbd=stopped
-    write /sys/module/g_android/parameters/product_id 9017
-
-#on early-init
-#    start hwprops
-
 #---enable keypad interrupt until boot complete
 on boot
     ## RIL needs this
