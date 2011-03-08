@@ -29,9 +29,9 @@ bin/rild
 etc/firmware/yamato_pfp.fw
 etc/firmware/yamato_pm4.fw
 etc/BCM4325D1_004.002.004.0230.0244.hcd
-etc/dhd.ko
 etc/nvram.txt
 etc/sdio_cit.bin
+etc/sdio.bin
 
 lib/egl/egl.cfg
 lib/egl/libEGL_adreno200.so

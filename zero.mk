@@ -117,7 +117,7 @@ PRODUCT_COPY_FILES += \
 
 ## Wifi module
 PRODUCT_COPY_FILES += \
-    device/geeksphone/zero/prebuilt/dhd.ko:system/etc/dhd.ko
+    device/geeksphone/zero/prebuilt/dhd.ko:system/lib/modules/dhd.ko
 
 ## FMRadio app and dependencies
 PRODUCT_COPY_FILES += \
@@ -138,12 +138,13 @@ PRODUCT_COPY_FILES += \
     vendor/geeksphone/zero/proprietary/bin/CKPD-daemon:system/bin/CKPD-daemon \
     vendor/geeksphone/zero/proprietary/bin/memsicd:system/bin/memsicd \
     vendor/geeksphone/zero/proprietary/bin/wl:system/bin/wl \
-    vendor/geeksphone/zero/proprietary/etc/sdio_cit.bin:system/etc/sdio_cit.bin \
+    vendor/geeksphone/zero/proprietary/etc/sdio.bin:system/etc/firmware/fw_bcm4329_apsta.bin \
+    vendor/geeksphone/zero/proprietary/etc/sdio_cit.bin:system/etc/firmware/fw_bcm4329.bin \
     vendor/geeksphone/zero/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     device/geeksphone/zero/prebuilt/init.qcom.bt.sh:system/bin/init.qcom.bt.sh \
     device/geeksphone/zero/prebuilt/init.qcom.coex.sh:system/etc/init.qcom.coex.sh \
     device/geeksphone/zero/prebuilt/wificit.sh:system/bin/wificit.sh \
-    device/geeksphone/zero/prebuilt/nvram.txt:system/etc/nvram.txt \
+    device/geeksphone/zero/prebuilt/nvram.txt:system/etc/wifi/nvram.txt \
     vendor/geeksphone/zero/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
     device/geeksphone/zero/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
     vendor/geeksphone/zero/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
@@ -157,7 +158,6 @@ PRODUCT_COPY_FILES += \
     vendor/geeksphone/zero/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
     vendor/geeksphone/zero/proprietary/lib/libgsl.so:system/lib/libgsl.so \
     vendor/geeksphone/zero/proprietary/etc/BCM4325D1_004.002.004.0230.0244.hcd:system/etc/BCM4325D1_004.002.004.0230.0244.hcd \
-    vendor/geeksphone/zero/proprietary/etc/dhd.ko:system/etc/dhd.ko \
     vendor/geeksphone/zero/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.zero.so
 
 

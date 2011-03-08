@@ -5,15 +5,16 @@ BOARD_USES_QCOM_LIBS := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
-BOARD_WLAN_DEVICE := bcm4325
-WIFI_DRIVER_FW_STA_PATH := "/system/etc/sdio_cit.bin"
+BOARD_WLAN_DEVICE := bcm4329
+#WIFI_DRIVER_FW_STA_PATH := "/system/etc/firmware/fw_bcm4329_apsta.bin"
 WIFI_DRIVER_MODULE_NAME     := "dhd"
-WIFI_DRIVER_MODULE_PATH     := "/system/etc/dhd.ko"
-WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/sdio_cit.bin nvram_path=/system/etc/nvram.txt"
+WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/dhd.ko"
+WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/firmware/fw_bcm4329.bin nvram_path=/system/etc/wifi/nvram.txt"
+## No CSCAN, no 0.6
 #WPA_SUPPLICANT_VERSION      := VER_0_6_X
 WIFI_FIRMWARE_LOADER        := wifi-loader
 
-BOARD_WPA_SUPPLICANT_DRIVER := AWEXT
+BOARD_WPA_SUPPLICANT_DRIVER := WEXT
 BOARD_USE_FROYO_LIBCAMERA := true
 BOARD_CAMERA_USE_GETBUFFERINFO := true
 BOARD_USE_CAF_LIBCAMERA := true
