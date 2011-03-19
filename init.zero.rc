@@ -54,7 +54,7 @@ on boot
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth
     write /proc/sys/net/ipv4/tcp_adv_win_scale  1
 
-property:dev.bootcomplete=1
+on property:dev.bootcomplete=1
     # Adjust cpufreq to ondemand according to original post-boot script
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor ondemand
     write /sys/devices/system/cpu/cpu0/cpufreq/ondemand/up_threshold 90
@@ -101,7 +101,7 @@ service hciattach /system/bin/sh /system/bin/init.qcom.bt.sh
 
 service qmuxd /system/bin/qmuxd
 
-service wpa_supplicant /system/bin/wpa_supplicant -Dwext -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
+service wpa_supplicant /system/bin/wpa_supplicant -Dawext -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
     user root
     group wifi inet
     socket wpa_wlan0 dgram 660 wifi wifi
