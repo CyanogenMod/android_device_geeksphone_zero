@@ -69,7 +69,6 @@ PRODUCT_COPY_FILES += \
     vendor/geeksphone/zero/proprietary/lib/libdll.so:system/lib/libdll.so \
     vendor/geeksphone/zero/proprietary/bin/rild:system/bin/rild \
     vendor/geeksphone/zero/proprietary/lib/libloc_api.so:system/lib/libloc_api.so \
-    vendor/geeksphone/zero/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/geeksphone/zero/proprietary/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
     vendor/geeksphone/zero/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so
 
