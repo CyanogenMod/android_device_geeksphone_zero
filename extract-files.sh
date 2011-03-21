@@ -68,7 +68,6 @@ lib/libwms.so
 lib/libwmsts.so
 lib/libloc_api.so
 
-lib/libcamera.so
 lib/libmmipl.so
 lib/libmmjpeg.so
 lib/liboemcamera.so

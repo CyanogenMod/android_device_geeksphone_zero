@@ -15,8 +15,6 @@ WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/firmware/fw_bcm4329.bi
 WIFI_FIRMWARE_LOADER        := wifi-loader
 
 BOARD_WPA_SUPPLICANT_DRIVER := AWEXT
-BOARD_USE_FROYO_LIBCAMERA := true
-BOARD_CAMERA_USE_GETBUFFERINFO := true
 BOARD_USE_CAF_LIBCAMERA := true
 
 
