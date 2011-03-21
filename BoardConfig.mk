@@ -30,7 +30,7 @@ TARGET_BOOTLOADER_BOARD_NAME := zero
 
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 
-BOARD_KERNEL_CMDLINE := mem=212M console=null androidboot.hardware=zero g_android.product_id=0x9018
+BOARD_KERNEL_CMDLINE := mem=212M console=null androidboot.hardware=zero
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_PAGE_SIZE := 0x00000800
 
