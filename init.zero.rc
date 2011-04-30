@@ -116,9 +116,9 @@ service wpa_supplicant /system/bin/wpa_supplicant -Dawext -iwlan0 -c/data/misc/w
 
 on property:init.svc.wpa_supplicant=stopped
     write /sys/devices/platform/msm_sdcc.2/polling 0
-    stop dhcpcd
+    stop dhcpcd_wlan0
 
-service dhcpcd /system/bin/dhcpcd -BKL wlan0
+service dhcpcd_wlan0 /system/bin/dhcpcd -BKL wlan0
     disabled
     oneshot
 
