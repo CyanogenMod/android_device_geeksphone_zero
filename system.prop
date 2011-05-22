@@ -25,3 +25,6 @@ ro.telephony.call_ring.delay=5000
 
 ## Not enough space in /cache for dalvik-cache
 dalvik.vm.dexopt-data-only=1
+
+# Respect ALS setting, turn it off if not in use
+ro.hardware.respect_als=true
