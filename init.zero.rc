@@ -20,7 +20,7 @@ on fs
    chmod 777 /data/simcom/simlog
    mkdir /data/simcom/btadd        0777 system system
    chmod 777 /data/simcom/btadd
-   mount yaffs2 mtd@system /system rw remount
+   #mount yaffs2 mtd@system /system rw remount
 
 #---enable keypad interrupt until boot complete
 on boot
