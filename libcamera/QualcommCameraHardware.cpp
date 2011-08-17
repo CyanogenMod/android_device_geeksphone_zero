@@ -914,6 +914,7 @@ static int fb_fd = -1;
 static int32_t mMaxZoom = 0;
 static bool zoomSupported = false;
 static bool native_get_maxzoom(int camfd, void *pZm);
+static bool native_get_zoomratios(int camfd, void *pZr, int maxZoomLevel);
 
 static int dstOffset = 0;
 
@@ -1118,8 +1119,13 @@ void QualcommCameraHardware::initDefaultParameters()
                 //if max zoom is available find the zoom ratios
                 int16_t * zoomRatios = new int16_t[mMaxZoom+1];
                 if(zoomRatios != NULL){
+                    if(native_get_zoomratios(mCameraControlFd,
+                                (void *)zoomRatios, mMaxZoom + 1) == true){
+                        zoom_ratio_values =
+                            create_str(zoomRatios, mMaxZoom + 1);
+                    }else {
                     LOGE("Failed to get zoomratios...");
-			// FIXME!
+                    }
                     delete zoomRatios;
                 } else {
                     LOGE("zoom ratios failed to acquire memory");
@@ -1182,7 +1188,7 @@ void QualcommCameraHardware::initDefaultParameters()
         LOGV("max zoom is %d", mMaxZoom);
         mParameters.set("max-zoom",mMaxZoom);
         mParameters.set(CameraParameters::KEY_ZOOM_RATIOS,
-                            "100,200,300,400,500,600");
+                            zoom_ratio_values);
     } else {
         mParameters.set(CameraParameters::KEY_ZOOM_SUPPORTED, "false");
     }
@@ -1545,6 +1551,31 @@ static bool native_get_maxzoom(int camfd, void *pZm)
     memcpy(pZoom, (int32_t *)ctrlCmd.value, sizeof(int32_t));
 
     LOGV("native_get_maxzoom X");
+    return true;
+}
+
+static bool native_get_zoomratios(int camfd, void *pZr, int maxZoomSize)
+{
+    LOGV("native_get_zoomratios E");
+    struct msm_ctrl_cmd ctrlCmd;
+    int16_t *zoomRatios = (int16_t *)pZr;
+
+    if(maxZoomSize <= 0)
+        return false;
+
+    ctrlCmd.type       = CAMERA_GET_PARM_ZOOMRATIOS;
+    ctrlCmd.timeout_ms = 5000;
+    ctrlCmd.length     = sizeof(int16_t)* (maxZoomSize);
+    ctrlCmd.value      = zoomRatios;
+    ctrlCmd.resp_fd    = camfd;
+
+    if (ioctl(camfd, MSM_CAM_IOCTL_CTRL_COMMAND, &ctrlCmd) < 0) {
+        LOGE("native_get_zoomratios: ioctl fd %d error %s",
+                camfd,
+                strerror(errno));
+        return false;
+    }
+    LOGV("native_get_zoomratios X");
     return true;
 }
 
