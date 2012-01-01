@@ -5,6 +5,7 @@ on fs
     chown system system /persist
     chmod 0777 /persist
 
+    mkdir /data/misc 01771 system misc
     mkdir /data/misc/sensors 0770 compass system
 
     symlink /persist/qcom_wlan_nv.bin /etc/firmware/wlan/qcom_wlan_nv.bin
