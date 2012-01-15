@@ -72,3 +72,5 @@ BOARD_USE_BROADCOM_FM_VOLUME_HACK := true
 BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/geeksphone/zero/vibrator.c
 
 TARGET_PROXIMITY_SENSOR_LIMIT := 3
+
+TARGET_SPECIFIC_HEADER_PATH := device/geeksphone/zero/include

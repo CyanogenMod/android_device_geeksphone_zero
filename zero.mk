@@ -10,7 +10,7 @@ PRODUCT_PACKAGES += \
     hwprops \
     abtfilt \
     gps.zero \
-    copybit.zero \
+    copybit.msm7k \
     gralloc.zero \
     libOmxCore
 
